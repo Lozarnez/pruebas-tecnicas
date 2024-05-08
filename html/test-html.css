@@ -1,0 +1,10 @@
+.outer {
+  border: solid 1px grey;
+  height: 200px;
+  padding: 10px;
+}
+
+.inner {
+  border: solid 1px red;
+}
+

@@ -1,0 +1,29 @@
+.outer {
+  border: solid 1px grey;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.inner {
+  border: solid 1px red;
+  text-align: center;
+}
+
+#test2 p:nth-of-type(1) span {
+  font-weight: bold;
+}
+
+#test3 > div > ul > li:first-child,
+#test3 > div > ul > li:last-child {
+  color: red;
+}
+
+#test3 > div > ul > li:last-child {
+  color: green;
+}
