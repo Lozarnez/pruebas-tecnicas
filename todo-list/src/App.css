@@ -2,3 +2,13 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.input-container {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.input {
+  width: 200px;
+}
