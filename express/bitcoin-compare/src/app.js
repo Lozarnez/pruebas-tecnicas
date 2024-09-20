@@ -1,13 +1,13 @@
 const express = require('express');
 
 const config = require('./config');
-const { answer } = require('./controllers');
+const { answer, getCompare } = require('./controllers');
 
 const app = express();
-const PORT = config.port;
+const PORT = config.PORT;
 
 // Routes
-app.get('/respuesta', answer);
+app.get('/respuesta', getCompare);
 
 app.listen(PORT, err => {
   if (err) {
