@@ -1,13 +1,19 @@
 const express = require('express');
 
-const config = require('./config');
+
 const { answer } = require('./controllers');
+const { getBitcoin } = require('./controllers/bitcoin');
+
 
 const app = express();
-const PORT = config.port;
+const PORT = 3000;
+
+
 
 // Routes
 app.get('/respuesta', answer);
+
+app.get('/compare', getBitcoin);
 
 app.listen(PORT, err => {
   if (err) {
